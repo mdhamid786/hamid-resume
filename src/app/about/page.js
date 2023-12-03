@@ -129,7 +129,7 @@ const about = () => {
           </div>
         </Layout>
         <Skills/>
-        <Experience/>/
+        <Experience/>
     
   
         <Education/>
