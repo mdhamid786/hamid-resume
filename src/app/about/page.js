@@ -128,10 +128,10 @@ const about = () => {
            </div>
           </div>
         </Layout>
-        <Skills/>
-        <Experience/>
+        {/* <Skills/> */}
+        {/* <Experience/> */}
     
-  
+  {/* tgufdrhhh */}
         <Education/>
       </main>
     </>
