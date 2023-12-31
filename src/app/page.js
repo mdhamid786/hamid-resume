@@ -50,18 +50,16 @@ export default function Home() {
               </p>
 
               <div className=" flex items-center self-start mt-2 lg:self-center">
-                <Link
-                  className="flex items-center bg-dark text-light  p-2.5 px-6 rounded-lg text-lg
-                   font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent
-                    hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
-                     md:p-2 md-px-4 md:text-base"
-                  download={true}
-                  href="/resume.pdf"
-                  target="_blank"
-                >
-                  Resume
-                  <LinkArrow className=" w-6 ml-1" />
-                </Link>
+              <a
+  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md-px-4 md:text-base"
+  href="/resume.pdf"
+  download="YourResumeFileName.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Resume
+  <LinkArrow className="w-6 ml-1" />
+</a>
                 <Link
                   href="mailto:ali.hamid161999@gmail.com"
                   target="_blank"
