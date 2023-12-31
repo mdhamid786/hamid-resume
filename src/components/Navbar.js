@@ -108,7 +108,7 @@ const Navbar = () => {
           </motion.a>
 
           <motion.a
-            href="/"
+            href="https://github.com/mdhamid786"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -118,7 +118,7 @@ const Navbar = () => {
           </motion.a>
 
           <motion.a
-            href="/"
+            href="linkedin.com/in/md-hamid-ali-b46474210"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -127,15 +127,7 @@ const Navbar = () => {
             <LinkedInIcon />
           </motion.a>
 
-          <motion.a
-            href="/"
-            target="_blank"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className=" w-6 ml-3"
-          >
-            <DribbbleIcon />
-          </motion.a>
+         
 
           <button
             className={`ml-3 flex items-start justify-center rounded-full p-1 ${
