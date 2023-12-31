@@ -74,7 +74,8 @@ export default function Home() {
           </div>
         </Layout>
         <Hire />
-        <div className=" absolute right-8 bottom-8 inline-block w-24 md:hidden">
+        {/* hhr */}
+        <div className=" absolute right-8 bottom-8 inline-block  w-24 md:hidden">
           <Image src={lightBulb} className="w-full h-auto" />
         </div>
       </main>
