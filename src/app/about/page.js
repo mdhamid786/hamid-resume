@@ -50,8 +50,7 @@ const about = () => {
     <>
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-6">
-        {/* hgghhghgh */}
-        {/* <AnimatedText text="Md Hamid Ali !" className="mb-16 lg:&apos;!text-7xl sm:&apos;!text-6xl xs:&apos;!text-4xl sm:mb-8"/> */}
+          <AnimatedText text="Md Hamid Ali !" className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"/>
           <div className=" grid w-full grid-cols-8 gap-16 sm:gap-8 ">
             <div className=" col-span-3 flex flex-col items-start justify-center xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className=" mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
@@ -63,7 +62,7 @@ const about = () => {
                 digital experiences.  With 1+ years of experience in the field. I
                 am always looking for new and innovative ways to bring my
                 clients' visions to life. */}
-                Hello, I'm Md Hamid Ali, a proficient MERN Stack Developer dedicated to building robust and dynamic web applications.
+                Hello, I am Md Hamid Ali, a proficient MERN Stack Developer dedicated to building robust and dynamic web applications.
                  With a solid foundation in MongoDB, Express.js, React.js, and Node.js, I have over 1.5+ years of hands-on experience in this field.
               </p>
 
@@ -76,8 +75,8 @@ const about = () => {
               </p>
               <p className=" font-medium text-justify">
               
-                passion for innovation and staying at the forefront of technology, I'm always eager to tackle new challenges.
-                 Let's collaborate and turn your web development aspirations into reality!
+                passion for innovation and staying at the forefront of technology, I am always eager to tackle new challenges.
+                 Let collaborate and turn your web development aspirations into reality!
               </p>
 
               {/* <p className=" font-medium text-justify">
@@ -130,7 +129,7 @@ const about = () => {
           </div>
         </Layout>
         <Skills/>
-        <Experience/>
+        <Experience/>/
     
   
         <Education/>

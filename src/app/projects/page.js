@@ -10,7 +10,7 @@ import Sono from "../../../public/images/projects/sono.png";
 import PDPL from "../../../public/images/projects/d2rtechweb.png";
 import Shop from "../../../public/images/projects/shoppersbills.png";
 // import D2R from "../../../public/images/projects/dertech.png";
-import ECOM from "../../../public/images/projects/ecommerce.png";
+import ECOM from "../../../public/images/projects/banner.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -137,12 +137,14 @@ const page = () => {
               <FeaturedProject
                 title="E-commerce Mern Stack"
                 img={ECOM}
-                summary="Welcome to apnaShop your ultimate destination for buying and selling
-                 everything from trendy shoes to cutting-edge mobile devices. Immerse yourself in a seamless shopping
-                  experience powered by the MERN stack, where you can explore, shop, and connect with ease. Discover
-                   the perfect blend of convenience and variety, redefining the way you buy and sell online. "
-                link="https://ecom-online-shop-navy.vercel.app/"
-                github="https://github.com/hamidd2r/Ecom-OnlineShop"
+                summary="Welcome to our grocery store website! We are your one-stop shop for all your grocery needs,
+                 offering a wide selection of fresh produce, meats, dairy products, pantry staples, and more. With
+                  convenient online ordering and delivery options, we make it easy for you to stock up on all your
+                   favorite items without ever leaving the comfort of your home. Whether you're planning a family meal, 
+                   stocking up for the week, or just need a few essentials, we've got you covered. Thank you for choosing us 
+                   as your go-to grocery store!"
+                link="https://ecommerce-react-sandy.vercel.app/"
+                github="https://ecommerce-react-sandy.vercel.app/"
                 type="featured projects"
               />
             </div>
