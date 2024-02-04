@@ -3,7 +3,14 @@ import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import Link from "next/link";
-import Project1 from "../../../public/images/projects/ecommerce.png";
+import Project1 from "../../../public/images/profile/myname.png";
+import Project2 from "../../../public/images/profile/college1.jpg";
+// import Project3 from "../../../public/images/profile/college2.jpg";
+import Project4 from "../../../public/images/profile/certificate.png";
+import app from "../../../public/images/profile/appdev.jpg";
+import months from "../../../public/images/profile/6months.jpg";
+import apptitude from "../../../public/images/profile/apptitude.jpg";
+
 
 import React, { useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
@@ -63,6 +70,7 @@ const FeatureArticle = ({ img, title, time, summary, link }) => {
         (max-width:1200px) 50vw, 
         50vw
         "
+        
         />
       </Link>
 
@@ -109,32 +117,68 @@ const page = () => {
       <main className=" w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Tips to become a better programmer"
+            text="Our journey "
             className="mb-16 lg:lg:!text-7xl sm:!text-6xl xs:xs:!text-4xl"
           />
           <ul className=" grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
           
                 <FeatureArticle 
-                title="Write each line of code multiple times"
-                summary="Contribute to the open-source community."
+                title="When we are selected campus placement"
+                summary="successful campus placement journey! 🌟 thanks #Arun datta sir"
                 time="9 min read"
                 link="/"
                 img={Project1}
                 />
 
            <FeatureArticle 
-                title="Write each line of code multiple times"
-                summary="Contribute to the open-source community."
+                title="Grateful and Honored to Receive the Netsmart infotech placement Award 🏆"
+                summary="Thank you to the incredible collage and our visionary director for this recognition. #LKCE Collage"
                 time="9 min read"
                 link="/"
-                img={Project1}
+                img={Project2}
+                />
+
+
+                
+<FeatureArticle 
+                title="I have completed 6 months internship  🏆"
+                summary="I successfully completed a dynamic 6-month internship at Solitaire Infosys in Mohali, where I gained hands-on experience"
+                time="9 min read"
+                link="/"
+                img={months}
+                />
+
+<FeatureArticle 
+                title="I have completed 6 weeks training  🏆"
+                summary="I successfully completed a dynamic 6-weeks training at internshala where i learn about mobile app developement"
+                time="9 min read"
+                link="/"
+                img={app}
+                />
+
+
+                
+           <FeatureArticle 
+                title="I have completed 15 days full stack bootcamp"
+                summary="Learn about codding cleaning andd setup project..."
+                time="9 min read"
+                link="/"
+                img={Project4}
+                />
+
+<FeatureArticle 
+                title="I have completed 30 hours apptitude skills"
+                summary="I have completed 30 hours apptitude skills online mode"
+                time="9 min read"
+                link="/"
+                img={apptitude}
                 />
           
           </ul>
 
-          <h2 className=" font-bold text-4xl w-full text-center my-6 mt-5 ">All Articles</h2>
+          {/* <h2 className=" font-bold text-4xl w-full text-center my-6 mt-5 ">All </h2> */}
 
-          <ul>
+          {/* <ul>
             <Articles 
             title=" Write each line of code multiple times."
             date="24-12-2024"
@@ -166,7 +210,7 @@ const page = () => {
             img={Project1}
            
             />
-          </ul>
+          </ul> */}
         </Layout>
       </main>
     </>
