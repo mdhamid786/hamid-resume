@@ -7,7 +7,8 @@ import React from "react";
 import BA from "../../../public/images/projects/ba.png";
 import Arohan from "../../../public/images/projects/arohan.png";
 import Sono from "../../../public/images/projects/sono.png";
-import PDPL from "../../../public/images/projects/d2rtechweb.png";
+import PDPL from "../../../public/images/projects/mu.png";
+import world from "../../../public/images/projects/world.png";
 import Shop from "../../../public/images/projects/shoppersbills.png";
 // import D2R from "../../../public/images/projects/dertech.png";
 import ECOM from "../../../public/images/projects/banner.jpg";
@@ -174,16 +175,29 @@ const page = () => {
 
             <div className=" col-span-12">
               <FeaturedProject
-                title="E-commerce Mern Stack"
+                title="ShoppersBill Mern Stack"
                 img={Shop}
                 summary="Welcome ShoppersBill With Next.js providing frontend and a powerful Node.js API managing the backend,
                 also use mongodb for handling data 
                 our platform ensures a dynamic and convenient user experience. Easily add bills, bill transactions histroy,"
-                link="http://3.133.136.199/"
-                github="http://3.133.136.199/"
+                link="https://shoppers-bill-user.vercel.app"
+                github="https://shoppers-bill-user.vercel.app"
                 type="featured projects"
               />
             </div>
+
+
+            <div className=" col-span-6  sm:col-span-12">
+              <Project
+                title="ShoppersBill Admin"
+                img={Shop}
+                summary="ShoppersBill admin panel: Next.js frontend, Node.js API backend with MongoDB, facilitating bill management and transaction history for a seamless user experience."
+                link="https://shoppers-admin.vercel.app/login"
+                github="https://shoppers-admin.vercel.app/login"
+                type="ShoppersBill"
+              />
+            </div>
+            
             <div className=" col-span-6  sm:col-span-12">
               <Project
                 title="Arohan"
@@ -197,12 +211,24 @@ const page = () => {
 
             <div className=" col-span-6  sm:col-span-12">
               <Project
-                title="E-commerce Mern Stack"
+                title="MUN Project"
                 img={PDPL}
-                summary="MERN (MongoDB, Express.js, React.js, Node.js) E-commerce website, a culmination of cutting-edge technologies to deliver a seamless shopping experience. With MongoDB ensuring efficient data management, Express.js powering a scalable backend, React.js creating dynamic front-end interfaces, and Node.js orchestrating backend operations,"
-                link="https://d2-r-training.vercel.app/"
-                github="https://d2-r-training.vercel.app/"
-                type="Ecommerce Website"
+                summary="MERN (MongoDB, Express.js, React.js, Node.js) website, a culmination of cutting-edge technologies to deliver a seamless event experience"
+                link="https://mun-five.vercel.app/"
+                github="https://mun-five.vercel.app/"
+                type="Event Website"
+              />
+            </div>
+
+
+            <div className=" col-span-6  sm:col-span-12">
+              <Project
+                title="World Map Project"
+                img={world}
+                summary="Utilize React with mapping libraries such as React-Leaflet or React-Simple-Maps to showcase a world map, integrating markers to highlight desired locations"
+                link="https://worldmap-snowy.vercel.app/"
+                github="https://worldmap-snowy.vercel.app/"
+                type="World Map"
               />
             </div>
           </div>
