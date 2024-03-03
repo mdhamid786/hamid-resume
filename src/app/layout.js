@@ -9,8 +9,8 @@ import Script from 'next/script'
 const inter = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'hamid portfolio',
-  description: 'full stack developer',
+  title: 'Hamid Portfolio',
+  description: 'Mern stack developer',
 }
 
 export default function RootLayout({ children }) {

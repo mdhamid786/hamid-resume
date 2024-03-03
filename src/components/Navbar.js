@@ -10,7 +10,6 @@ import {
   LinkedInIcon,
   MoonIcon,
   SunIcon,
-  TwitterIcon,
 } from "./icons";
 import useThemesSwicher from "./hooks/useThemesSwicher";
 
@@ -97,15 +96,7 @@ const Navbar = () => {
         </nav>
 
         <nav className=" flex items-center justify-center flex-wrap">
-          <motion.a
-            href="/"
-            target="_blank"
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className=" w-6 mx-3"
-          >
-            <TwitterIcon />
-          </motion.a>
+         
 
           <motion.a
             href="https://github.com/mdhamid786"
