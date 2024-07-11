@@ -4,7 +4,7 @@ import { useScroll, motion } from "framer-motion";
 import Listicon from "./Listicon";
 
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company, companyLink, time, address, work,work1,work2,work3,work4,work5,work6, work7, work8 }) => {
   const ref = useRef(null);
   return (
     <li
@@ -34,6 +34,14 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
           {address}
         </span>
         <p className=" font-medium w-full text-justify md:text-sm">{work}</p>
+        <p className=" font-medium w-full text-justify md:text-sm">{work1}</p>
+        <p className=" font-medium w-full text-justify md:text-sm">{work2}</p>
+        <p className=" font-medium w-full text-justify md:text-sm">{work3}</p>
+        <p className=" font-medium w-full text-justify md:text-sm">{work4}</p>
+        <p className=" font-medium w-full text-justify md:text-sm">{work5}</p>
+        <p className=" font-medium w-full text-justify md:text-sm">{work6}</p>
+        <p className=" font-medium w-full text-justify md:text-sm">{work7}</p>
+        <p className=" font-medium w-full text-justify md:text-sm">{work8}</p>
       </motion.div>
     </li>
   );
@@ -68,8 +76,17 @@ const Experience = () => {
                 companyLink="d2rtech.com"
                 time=" Sep - 2022-Present"
                 address="Badshapur plus office Gurugram"
-                work="Working as a MERN Stack Developer at D2RTECH, I am responsible for the design, development, and maintenance of web applications using the MERN technology stack.  
-                "
+                work=" * Developing and designing front end web architecture"
+                work1=" * Define code architecture decisions to support high-performance products "
+                work2=" * Experience creating RESTfull services with NodeJs "
+                work3=" * Knowledge of Modern frameworks and design patterns "
+                work4=" * Translate wireframes and PSD Designs into functional web applications "
+                work5=" *  Developing well-functioning databases and applications"
+                work6=" *  Work with development teams and managers to ideate software solutions"
+                work7=" * Conduct and participate in project planning & scheduling and design discussions "
+                work8=" * Test software to ensure efficiency Address and improve any technical issues "
+
+
               />
 
               <Details
@@ -78,10 +95,10 @@ const Experience = () => {
                 companyLink="https://www.solitaireinfosystems.com/"
                 time="March-2022 | Aug-2022"
                 address="Sahibzada Ajit Singh Nagar, Punjab"
-                work="As a MERN (MongoDB, Express.js, React.js, Node.js) stack intern, I have gained valuable experience in web development using these technologies.
-                 My proficiency spans MongoDB for data storage, Express.js for server-side development, React.js for building dynamic user interfaces, and Node.js for
-                  backend server operations. Additionally, I have acquired in-depth knowledge of HTML, CSS, and JavaScript, enhancing my skills in crafting engaging and
-                   interactive web experiences."
+                work=" * Completed internship at Solitaire Infosys, focusing on MERN Stack development"
+                work1=" * Learned JavaScript, HTML, CSS, and MERN framework (MongoDB, Express.js, React.js, Node.js)"
+                work2=" * Honed skills in both frontend and backend development "
+                work3=" *  Worked with cutting-edge technologies to create dynamic web applications "
               />
             </li>
           </ul>

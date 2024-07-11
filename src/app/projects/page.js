@@ -1,7 +1,6 @@
 "use client"
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import { GithubIcon } from "@/components/icons";
 import Link from "next/link";
 import React from "react";
 import BA from "../../../public/images/projects/ba.png";
@@ -12,12 +11,13 @@ import world from "../../../public/images/projects/world.png";
 import Shop from "../../../public/images/projects/shoppersbills.png";
 // import D2R from "../../../public/images/projects/dertech.png";
 import ECOM from "../../../public/images/projects/banner.jpg";
+import tapir from "../../../public/images/projects/tapir.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
 const FramerImage = motion(Image)
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, summary, img, link,tech }) => {
   return (
     <>
       <article
@@ -51,11 +51,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             </h2>
           </Link>
           <p className=" my-2 font-medium text-justify text-dark dark:text-light sm:text-sm"> {summary}</p>
+          <p className=" my-2 font-medium text-justify text-dark dark:text-light sm:text-sm"> {tech}</p>
+
 
           <div className=" mt-2 flex items-center">
-            <Link href={github} target="_blank" className="w-10">
-              <GithubIcon />
-            </Link>
+           
 
             <Link
               href={link}
@@ -71,7 +71,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github, summary }) => {
+const Project = ({ title, type, img, link, summary }) => {
   return (
     <article
       className=" w-full flex flex-col items-center justify-center rounded-2xl
@@ -114,13 +114,11 @@ const Project = ({ title, type, img, link, github, summary }) => {
           <Link
             href={link}
             target="_blank"
-            className=" text-lg font-semibold underline md:text-base"
-          >
-            Vercel Live
+            className=" ml-4 rounded-lg bg-dark text-light   p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base "
+            >
+              Visit Projects
           </Link>
-          <Link href={github} target="_blank" className="w-8  md:w-[6]">
-            <GithubIcon />
-          </Link>
+          
         </div>
       </div>
     </article>
@@ -136,18 +134,29 @@ const page = () => {
           <div className=" grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className=" col-span-12">
               <FeaturedProject
-                title="E-commerce Mern Stack"
+                title="Tapir Software Recharge"
+                img={tapir}
+                summary="Ultimate Recharge Software: A comprehensive payment platform designed to streamline and simplify the process of recharging and bill payments, ensuring quick and seamless transactions for users."
+                tech="Technologies used: Next.js, Node.js, tailwind  and SQL."
+                link="http://tapir.co.in/"
+                type="Latest Projects"
+              />
+              
+            </div>
+            <div className=" col-span-12">
+              <FeaturedProject
+                title="E-commerce Website"
                 img={ECOM}
                 summary="Welcome to our grocery store website! We are your one-stop shop for all your grocery needs,
-                 offering a wide selection of fresh produce, meats, dairy products, pantry staples, and more. With
+                 offering a wide selection of fresh produce, jouice, dairy products, pantry staples, and more. With
                   convenient online ordering and delivery options, we make it easy for you to stock up on all your
-                   favorite items without ever leaving the comfort of your home. Whether you're planning a family meal, 
-                   stocking up for the week, or just need a few essentials, we've got you covered. Thank you for choosing us 
-                   as your go-to grocery store!"
+                   favorite items without ever leaving the comfort of your home. Whether you're planning a family meal."
+                tech="Technologies used: Next.js, bootstrap  and Redux."
+
                 link="https://ecommerce-react-sandy.vercel.app/"
-                github="https://ecommerce-react-sandy.vercel.app/"
                 type="featured projects"
               />
+              
             </div>
             <div className=" col-span-6 sm:col-span-12">
               <Project
@@ -157,7 +166,6 @@ const page = () => {
                 our dynamic platform seamlessly integrates real-time chat, archive sharing, and a secure archive system.
                  With Firebase ensuring authentication and a dynamic database,"
                 link="https://sono-website.vercel.app/"
-                github="https://github.com/hamidd2r/sono_website/tree/master"
                 type="Firebase"
               />
             </div>
@@ -168,7 +176,6 @@ const page = () => {
                 img={BA}
                 summary="BAO offers custom mobile & web designing, and development services along with end-to-end digital marketing solutions to build awareness using technology in this website HTML CSS as well as Javascript"
                 link="https://testing-web-navy.vercel.app/"
-                github="https://testing-web-navy.vercel.app/"
                 type="Static Website"
               />
             </div>
@@ -181,7 +188,6 @@ const page = () => {
                 also use mongodb for handling data 
                 our platform ensures a dynamic and convenient user experience. Easily add bills, bill transactions histroy,"
                 link="https://shoppers-bill-user.vercel.app"
-                github="https://shoppers-bill-user.vercel.app"
                 type="featured projects"
               />
             </div>
@@ -193,7 +199,6 @@ const page = () => {
                 img={Shop}
                 summary="ShoppersBill admin panel: Next.js frontend, Node.js API backend with MongoDB, facilitating bill management and transaction history for a seamless user experience."
                 link="https://shoppers-admin.vercel.app/login"
-                github="https://shoppers-admin.vercel.app/login"
                 type="ShoppersBill"
               />
             </div>
@@ -204,7 +209,6 @@ const page = () => {
                 img={Arohan}
                 summary="Explore the possibilities with our static website crafted using HTML, CSS, and JavaScript. We bring simplicity and elegance to the digital world."
                 link="https://arohansolutions.com/"
-                github="https://arohansolutions.com/"
                 type="Static Website"
               />
             </div>
@@ -215,7 +219,6 @@ const page = () => {
                 img={PDPL}
                 summary="MERN (MongoDB, Express.js, React.js, Node.js) website, a culmination of cutting-edge technologies to deliver a seamless event experience"
                 link="https://mun-five.vercel.app/"
-                github="https://mun-five.vercel.app/"
                 type="Event Website"
               />
             </div>
@@ -227,7 +230,6 @@ const page = () => {
                 img={world}
                 summary="Utilize React with mapping libraries such as React-Leaflet or React-Simple-Maps to showcase a world map, integrating markers to highlight desired locations"
                 link="https://worldmap-snowy.vercel.app/"
-                github="https://worldmap-snowy.vercel.app/"
                 type="World Map"
               />
             </div>

@@ -37,7 +37,7 @@ export default function Home() {
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in full stack development
                 web development. */}
-                MERN Stack Developer with 1.5 years of hands-on experience in
+                MERN Stack Developer with almost 2 years of hands-on experience in
                 professional web development. Specializing in both backend and
                 frontend technologies, I excel in leveraging the power of
                 Node.js for robust backend solutions and crafting dynamic user
@@ -56,7 +56,7 @@ export default function Home() {
                     hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
                      md:p-2 md-px-4 md:text-base"
                   download={true}
-                  href="/Resume.pdf"
+                  href="Hamid_MERN_2yr_Expr.pdf"
                   target="_blank"
                   passHref
                 >
