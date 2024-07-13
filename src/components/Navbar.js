@@ -10,6 +10,8 @@ import {
   LinkedInIcon,
   MoonIcon,
   SunIcon,
+  Vercel
+  
 } from "./icons";
 import useThemesSwicher from "./hooks/useThemesSwicher";
 
@@ -109,7 +111,7 @@ const Navbar = () => {
           </motion.a>
 
           <motion.a
-            href="linkedin.com/in/md-hamid-ali-b46474210"
+            href="https://www.linkedin.com/in/mdhamidali1"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -117,6 +119,17 @@ const Navbar = () => {
           >
             <LinkedInIcon />
           </motion.a>
+
+          <motion.a
+            href="https://vercel.com/md-hamid-alis-projects"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className=" w-6 mx-3 mr-12"
+          >
+            <Vercel />
+          </motion.a>
+
 
          
 
@@ -163,7 +176,6 @@ const Navbar = () => {
            whileTap={{ scale: 0.9 }}
            className=" w-6 mx-3 sm:mx-1"
          >
-           <TwitterIcon />
          </motion.a>
 
          <motion.a
@@ -177,7 +189,7 @@ const Navbar = () => {
          </motion.a>
 
          <motion.a
-           href="https://www.linkedin.com/in/md-hamid-ali-b46474210/"
+           href="www.linkedin.com/in/mdhamidali1"
            target="_blank"
            whileHover={{ y: -2 }}
            whileTap={{ scale: 0.9 }}
@@ -195,6 +207,7 @@ const Navbar = () => {
          >
            <DribbbleIcon />
          </motion.a>
+         
 
          <button
            className={`ml-3 flex items-start justify-center rounded-full p-1 ${
