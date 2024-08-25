@@ -57,13 +57,13 @@ const about = () => {
                 Biography
               </h2>
               <p className=" font-medium text-justify">
-                {/* Hi, I'm Md Hamid Ali, a full stack developer with a
+                 Hi, I'm Md Hamid Ali, a Full Stack Developer with a
                 passion for creating beautiful, functional, and user-centered
-                digital experiences.  With 1+ years of experience in the field. I
+                digital experiences.  With 2+ years of experience in the field and a B.Tech degree. I
                 am always looking for new and innovative ways to bring my
-                clients' visions to life. */}
-                Hello, I am Md Hamid Ali, a proficient MERN Stack Developer dedicated to building robust and dynamic web applications.
-                 With a solid foundation in MongoDB, Express.js, React.js, and Node.js, I have over 1.5+ years of hands-on experience in this field.
+                clients' visions to life. 
+                {/* Hello, I am Md Hamid Ali, a proficient MERN Stack Developer dedicated to building robust and dynamic web applications.
+                 With a solid foundation in MongoDB, Express.js, React.js, and Node.js, I have over 1.5+ years of hands-on experience in this field. */}
               </p>
 
               <p className=" font-medium my-4 text-justify">
@@ -71,7 +71,7 @@ const about = () => {
                 pretty – it's about solving problems and creating intuitive,
                 enjoyable experiences for users. */}
                 My journey in the MERN stack has been marked by a commitment to excellence in both frontend and backend development. 
-                From crafting seamless user interfaces with React to implementing scalable server-side solutions with Node.js, I thrive on transforming ideas into functional, user-friendly digital experiences.
+                From crafting seamless user interfaces with ReactJs & nextJs to implementing scalable server-side solutions with Node.js, I thrive on transforming ideas into functional, user-friendly digital experiences.
               </p>
               <p className=" font-medium text-justify">
               
@@ -121,7 +121,7 @@ const about = () => {
             
             <div className=" flex flex-col items-end justify-center  xl:items-center">
               <span className=" inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-               <AnimatedNumbers value={1.5}/>+
+               <AnimatedNumbers value={2}/>+
               </span>
               <h2  className=" text-xl font-medium capitalize text-dark/75 dark:text-light xl:text-center md:text-lg sm:text-base xs:text-sm">Years of experience</h2>
             </div>
@@ -129,7 +129,7 @@ const about = () => {
           </div>
         </Layout>
         <Skills/>
-        <Experience/>/
+        <Experience/>
     
   
         <Education/>

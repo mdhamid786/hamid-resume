@@ -37,12 +37,10 @@ export default function Home() {
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in full stack development
                 web development. */}
-                MERN Stack Developer with almost 2 years of hands-on experience in
-                professional web development. Specializing in both backend and
-                frontend technologies, I excel in leveraging the power of
-                Node.js for robust backend solutions and crafting dynamic user
-                interfaces with ReactJs & NextJs. My proficiency extends to
-                creating responsive and user-friendly websites.
+                MERN Stack Developer with 2 years of professional experience and a B.Tech degree. Skilled in
+backend and frontend technologies, specializing in dynamic and responsive user interfaces with React.js
+and Next.js. Expertise in scalable web applications, modern JavaScript, MongoDB, and integrating robust
+RESTful APIs using Node.js
                  {/* Seeking
                 opportunities to apply my expertise and passion for crafting
                 exceptional web experiences in a dynamic and growth-oriented
