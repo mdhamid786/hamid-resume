@@ -57,11 +57,11 @@ const about = () => {
                 Biography
               </h2>
               <p className=" font-medium text-justify">
-                 Hi, I'm Md Hamid Ali, a Full Stack Developer with a
+                 Hi, I am Md Hamid Ali, a Full Stack Developer with a
                 passion for creating beautiful, functional, and user-centered
                 digital experiences.  With 2+ years of experience in the field and a B.Tech degree. I
                 am always looking for new and innovative ways to bring my
-                clients' visions to life. 
+                clients visions to life. 
                 {/* Hello, I am Md Hamid Ali, a proficient MERN Stack Developer dedicated to building robust and dynamic web applications.
                  With a solid foundation in MongoDB, Express.js, React.js, and Node.js, I have over 1.5+ years of hands-on experience in this field. */}
               </p>
