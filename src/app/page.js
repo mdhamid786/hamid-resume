@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <div className=" w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="MERN Stack Developer"
+                text="Full Stack Web Developer"
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl   "
               />
               <p style={{textAlign:"justify"}} className=" my-4 text-base font-medium md:text-sm sm:text-xs">
@@ -37,7 +37,7 @@ export default function Home() {
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in full stack development
                 web development. */}
-                MERN Stack Developer with 2 years of professional experience and a B.Tech degree. Skilled in
+                Full Stack Developer with 2 years of professional experience and a B.Tech degree. Skilled in
 backend and frontend technologies, specializing in dynamic and responsive user interfaces with React.js
 and Next.js. Expertise in scalable web applications, modern JavaScript, MongoDB, and integrating robust
 RESTful APIs using Node.js

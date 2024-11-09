@@ -33,10 +33,10 @@ const Details = ({ position, company, companyLink, time, address, work,work1,wor
         <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {address}
         </span>
-        <p className=" font-medium w-full text-justify md:text-sm">{work}</p>
-        <p className=" font-medium w-full text-justify md:text-sm">{work1}</p>
-        <p className=" font-medium w-full text-justify md:text-sm">{work2}</p>
-        <p className=" font-medium w-full text-justify md:text-sm">{work3}</p>
+        <p className=" font-medium w-full text-justify md:text-sm"><symbol id="ic--round-play-arrow" viewBox="0 0 24 24"><path fill="black" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82"/></symbol>{work}</p>
+        <p className=" font-medium w-full text-justify md:text-sm"><symbol id="ic--round-play-arrow" viewBox="0 0 24 24"><path fill="black" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82"/></symbol>{work1}</p>
+        <p className=" font-medium w-full text-justify md:text-sm"><symbol id="ic--round-play-arrow" viewBox="0 0 24 24"><path fill="black" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82"/></symbol>{work2}</p>
+        <p className=" font-medium w-full text-justify md:text-sm"><symbol id="ic--round-play-arrow" viewBox="0 0 24 24"><path fill="black" d="M8 6.82v10.36c0 .79.87 1.27 1.54.84l8.14-5.18a1 1 0 0 0 0-1.69L9.54 5.98A.998.998 0 0 0 8 6.82"/></symbol>{work3}</p>
         <p className=" font-medium w-full text-justify md:text-sm">{work4}</p>
         <p className=" font-medium w-full text-justify md:text-sm">{work5}</p>
         <p className=" font-medium w-full text-justify md:text-sm">{work6}</p>
@@ -68,7 +68,27 @@ const Experience = () => {
              "
           ></motion.div>
 
-          <ul className=" w-full flex flex-col items-start justify-between ml-4 xs:ml-2 ">
+          <ul className=" w-full flex flex-col items-start justify-between ml-4 xs:ml-2 mt-5 ">
+
+
+          <li>
+              <Details
+                position="Full Stack Engineer"
+                company="WEBTRIXZ DIGITAL "
+                companyLink="https://www.webtrixz.com/"
+                time=" Aug - 2024-Present "
+                address=" Andheri West, Mumbai, Maharashtra"
+                work=" * Led the development of a responsive e-commerce application, implementing features like dynamic product listings, cart, and payment gateways."
+                work1=" * Enhanced page load speed through code optimization, lazy loading, and optimizing API calls. "
+                work2=" * Designed a custom e-commerce dashboard to help clients monitor key metrics for both B2B and B2C performance, supporting data-driven decisions. "
+               
+
+
+              />
+
+             
+            </li>
+
             <li>
               <Details
                 position="Software Engineer"
@@ -76,15 +96,10 @@ const Experience = () => {
                 companyLink="d2rtech.com"
                 time=" Sep - 2022-Present"
                 address="Badshapur plus office Gurugram"
-                work=" * Developing and designing front end web architecture"
-                work1=" * Define code architecture decisions to support high-performance products "
+                work="  Coordinated with design and backend teams to implement full-stack solutions, leading to improved project timelines and better user experience."
+                work1=" * Work with development teams and managers to ideate software solutions. "
                 work2=" * Experience creating RESTfull services with NodeJs "
-                work3=" * Knowledge of Modern frameworks and design patterns "
-                work4=" * Translate wireframes and PSD Designs into functional web applications "
-                work5=" *  Developing well-functioning databases and applications"
-                work6=" *  Work with development teams and managers to ideate software solutions"
-                work7=" * Conduct and participate in project planning & scheduling and design discussions "
-                work8=" * Test software to ensure efficiency Address and improve any technical issues "
+               
 
 
               />

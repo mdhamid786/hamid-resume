@@ -12,6 +12,7 @@ import Shop from "../../../public/images/projects/shoppersbills.png";
 // import D2R from "../../../public/images/projects/dertech.png";
 import ECOM from "../../../public/images/projects/banner.jpg";
 import tapir from "../../../public/images/projects/tapir.png";
+import yd from "../../../public/images/yd.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -134,15 +135,31 @@ const page = () => {
           <div className=" grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className=" col-span-12">
               <FeaturedProject
+                title="Yo Digitals Ecommerce"
+                img={yd}
+                summary="Yo Digitals Ecommerce supports both B2B and B2C, offering
+features for bulk orders and custom pricing for businesses while ensuring a seamless shopping experience for individual customers."
+                tech="Technologies used: Next.js, Node.js, tailwind  and PostgreSQL."
+                link="https://yodigitals.com/"
+                type="B2B & B2C"
+              />
+              
+            </div>
+
+
+            <div className=" col-span-12">
+              <FeaturedProject
                 title="Tapir Software Recharge"
                 img={tapir}
                 summary="Ultimate Recharge Software: A comprehensive payment platform designed to streamline and simplify the process of recharging and bill payments, ensuring quick and seamless transactions for users."
                 tech="Technologies used: Next.js, Node.js, tailwind  and SQL."
                 link="http://tapir.co.in/"
-                type="Latest Projects"
+                type="D2RTECH PROJECT"
               />
               
             </div>
+
+
             <div className=" col-span-12">
               <FeaturedProject
                 title="E-commerce Website"
