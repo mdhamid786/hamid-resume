@@ -29,7 +29,7 @@ export default function Home() {
             </div>
             <div className=" w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Full Stack Web Developer"
+                text="Software Engineer"
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl   "
               />
               <p style={{textAlign:"justify"}} className=" my-4 text-base font-medium md:text-sm sm:text-xs">
@@ -74,7 +74,7 @@ RESTful APIs using Node.js
         </Layout>
         <Hire />
         {/* hhr */}
-        <div className=" absolute right-8 bottom-8 inline-block  w-24 md:hidden">
+        <div className=" absolute right-12  bottom-12 inline-block  w-24 md:hidden mt-12">
           <Image src={lightBulb} className="w-full h-auto" />
         </div>
       </main>
