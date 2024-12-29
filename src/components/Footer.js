@@ -17,7 +17,7 @@ const Footer = () => {
                 Build With <span className=' text-primary dark:bg-primaryDark text-2xl px-1'>&#9825;</span>
                 By&nbsp; <Link className=' underline underline-offset-2' href="/">Md Hamid Ali</Link> 
                 </div>
-                <Link href="/">MERN DEV</Link>
+                <Link href="/">Full Stack Engineer</Link>
             
             </Layout>
 

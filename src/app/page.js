@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
    
-      <main className=" flex items-center text-dark min-h-screen dark:text-light">
+      <main className=" flex items-center text-dark min-h-screen  md:pt-16 dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
             <div className=" w-1/2 md:w-full">
@@ -37,7 +37,7 @@ export default function Home() {
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in full stack development
                 web development. */}
-                Full Stack Developer with 2 years of professional experience and a B.Tech degree. Skilled in
+                Full Stack Engineer with 2.6 years of professional experience and a B.Tech degree. Skilled in
 backend and frontend technologies, specializing in dynamic and responsive user interfaces with React.js
 and Next.js. Expertise in scalable web applications, modern JavaScript, MongoDB, and integrating robust
 RESTful APIs using Node.js
@@ -74,7 +74,7 @@ RESTful APIs using Node.js
         </Layout>
         <Hire />
         {/* hhr */}
-        <div className=" absolute right-12  bottom-12 inline-block  w-24 md:hidden mt-12">
+        <div className=" absolute right-12  bottom-0 inline-block  w-24 md:hidden mt-12">
           <Image src={lightBulb} className="w-full h-auto" />
         </div>
       </main>

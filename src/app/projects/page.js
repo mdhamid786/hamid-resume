@@ -6,7 +6,8 @@ import React from "react";
 import BA from "../../../public/images/projects/ba.png";
 import Arohan from "../../../public/images/projects/arohan.png";
 import Sono from "../../../public/images/projects/sono.png";
-import cs from "../../../public/images/coming.jpg";
+import cs from "../../../public/12.jpg";
+import logica from "../../../public/images/coming.jpg";
 import PDPL from "../../../public/images/projects/mu.png";
 import world from "../../../public/images/projects/world.png";
 import Shop from "../../../public/images/projects/shoppersbills.png";
@@ -166,19 +167,21 @@ const page = () => {
             {/* Invocon */}
             <div className=" col-span-6 sm:col-span-12">
               <Project
-                title="Invocon"
-                img={cs}
-                summary="Invocon is a scalable case management platform offering seamless doctor case handling, category management, case allocation, real-time updates, secure data sharing, and integrated chat and video call features.,"
-                link=""
+                  title="Yo Digitals Ecommerce"
+                img={yd}
+                summary="Yo Digitals Ecommerce is a comprehensive platform that bridges the gap between B2B (Business-to-Business) and B2C (Business-to-Consumer) commerce, catering to diverse customer needs. It provides tools and features that allow businesses to manage bulk orders efficiently while ensuring individual customers have an intuitive and seamless shopping experience.
+
+."
+                tech="Technologies used: Next.js, Node.js, tailwind  and PostgreSQL."
+                link="https://shop.yodigitals.com/"
                 type="DURING WEBTRIXZ"
-                tech="Technologies used: Next.js, MongoDB, Node.js, Express.js & Redux."
               />
             </div>
             {/* logica portal */}
             <div className=" col-span-6 sm:col-span-12">
               <Project
                 title="Logica Portal"
-                img={cs}
+                img={logica}
                 summary="Our e-commerce platform combines a user-friendly shopping experience for B2C customers with a powerful admin panel, enabling effortless management of products, users, and orders for streamlined business operations."
                 link="https://logicaportal.com/"
                 type="DURING WEBTRIXZ"
@@ -189,13 +192,14 @@ const page = () => {
             {/* yo digitals */}
             <div className=" col-span-12">
               <FeaturedProject
-                title="Yo Digitals Ecommerce"
-                img={yd}
-                summary="Yo Digitals Ecommerce supports both B2B and B2C, offering
-               features for bulk orders and custom pricing for businesses while ensuring a seamless shopping experience for individual customers."
-                tech="Technologies used: Next.js, Node.js, tailwind  and PostgreSQL."
-                link="https://shop.yodigitals.com/"
-                type="DURING WEBTRIXZ"
+            
+
+              title="Docotor Management"
+                img={cs}
+                summary="Docotor Management is a scalable case management platform offering seamless doctor case handling, category management, case allocation, real-time updates, secure data sharing, and integrated chat and video call features.,"
+                link=""
+                type=""
+                tech="Technologies used: Next.js, MongoDB, Node.js, Express.js & Redux."
               />
             </div>
 
