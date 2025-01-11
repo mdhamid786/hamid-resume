@@ -59,7 +59,7 @@ const about = () => {
               <p className=" font-medium text-justify">
                  Hi, I am Md Hamid Ali, a Full Stack Engineer with a
                 passion for creating beautiful, functional, and user-centered
-                digital experiences.  With 2+ years of experience in the field and a B.Tech degree. I
+                digital experiences.  With 2.6+ years of experience in the field and a B.Tech degree. I
                 am always looking for new and innovative ways to bring my
                 clients visions to life. 
                 {/* Hello, I am Md Hamid Ali, a proficient MERN Stack Engineer dedicated to building robust and dynamic web applications.

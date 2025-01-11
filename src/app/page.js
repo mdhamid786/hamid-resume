@@ -10,7 +10,6 @@ import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 export default function Home() {
   return (
     <>
-   
       <main className=" flex items-center text-dark min-h-screen  md:pt-16 dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
@@ -32,16 +31,21 @@ export default function Home() {
                 text="Software Engineer"
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl   "
               />
-              <p style={{textAlign:"justify"}} className=" my-4 text-base font-medium md:text-sm sm:text-xs">
+              <p
+                style={{ textAlign: "justify" }}
+                className=" my-4 text-base font-medium md:text-sm sm:text-xs"
+              >
                 {/* As a skilled MERN Stack Developer, I am dedicated to turning
                 ideas into innovative web applications. Explore my latest
                 projects and articles, showcasing my expertise in full stack development
                 web development. */}
-                Full Stack Engineer with 2.6 years of professional experience and a B.Tech degree. Skilled in
-backend and frontend technologies, specializing in dynamic and responsive user interfaces with React.js
-and Next.js. Expertise in scalable web applications, modern JavaScript, MongoDB, and integrating robust
-RESTful APIs using Node.js
-                 {/* Seeking
+                Full Stack Engineer with 2.6 years of professional experience
+                and a B.Tech degree. Skilled in backend and frontend
+                technologies, specializing in dynamic and responsive user
+                interfaces with React.js and Next.js. Expertise in scalable web
+                applications, modern JavaScript, MongoDB, and integrating robust
+                RESTful APIs using Node.js
+                {/* Seeking
                 opportunities to apply my expertise and passion for crafting
                 exceptional web experiences in a dynamic and growth-oriented
                 environment. */}

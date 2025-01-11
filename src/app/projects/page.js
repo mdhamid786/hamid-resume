@@ -157,152 +157,136 @@ const Project = ({ title, type, img, link, summary, tech }) => {
 const page = () => {
   return (
     <>
-      <main className=" w-full mb-16 flex flex-col items-center justify-center dark:text-light">
-        <Layout className=" mt-5">
-          <AnimatedText
-            text="Our Project Knowledge"
-            className="mb-16 lg:lg:!text-7xl sm:!text-6xl xs:xs:!text-4xl"
-          />
-          <div className=" grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
-            {/* Invocon */}
-            <div className=" col-span-6 sm:col-span-12">
-              <Project
-                  title="Yo Digitals Ecommerce"
-                img={yd}
-                summary="Yo Digitals Ecommerce is a comprehensive platform that bridges the gap between B2B (Business-to-Business) and B2C (Business-to-Consumer) commerce, catering to diverse customer needs. It provides tools and features that allow businesses to manage bulk orders efficiently while ensuring individual customers have an intuitive and seamless shopping experience.
+<main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
+  <Layout className="mt-5">
+    <AnimatedText
+      text="Our Project Knowledge"
+      className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl"
+    />
+    <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+      {/* Logica Portal - B2C Platform */}
+      <div className="col-span-12">
+        <FeaturedProject
+          title="Logica Portal B2C Platform"
+          img={logica}
+          summary="Developed a high-performance B2C platform using Next.js and Node.js, optimized for speed and scalability. Integrated secure payment gateways and implemented a dynamic product recommendation system leveraging MongoDB for personalized shopping experiences."
+          link="https://emaavi.vercel.app/"
+          type="B2C Platform"
+          tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Secure Payment Integration"
+        />
+      </div>
 
-."
-                tech="Technologies used: Next.js, Node.js, tailwind  and PostgreSQL."
-                link="https://shop.yodigitals.com/"
-                type="DURING WEBTRIXZ"
-              />
-            </div>
-            {/* logica portal */}
-            <div className=" col-span-6 sm:col-span-12">
-              <Project
-                title="Logica Portal"
-                img={logica}
-                summary="Our e-commerce platform combines a user-friendly shopping experience for B2C customers with a powerful admin panel, enabling effortless management of products, users, and orders for streamlined business operations."
-                link="https://logicaportal.com/"
-                type="DURING WEBTRIXZ"
-                tech="Technologies used: Next.js, MongoDB, Node.js, Express.js & Redux."
-              />
-            </div>
+      {/* Yo Digitals Ecommerce */}
+      <div className="col-span-6 sm:col-span-12">
+        <Project
+          title="Yo Digitals Ecommerce"
+          img={yd}
+          summary="Engineered a hybrid B2B/B2C ecommerce platform using Next.js, PostgreSQL, and Node.js. Developed a robust order management system that supports high concurrency, ensuring seamless transactions. Applied performance optimization techniques, including lazy loading and server-side rendering (SSR)."
+          tech="Technologies used: Next.js, Node.js, PostgreSQL, TailwindCSS, Server-side Rendering (SSR), Lazy Loading"
+          link="https://shop.yodigitals.com/"
+          type="Ecommerce Platform"
+        />
+      </div>
 
-            {/* yo digitals */}
-            <div className=" col-span-12">
-              <FeaturedProject
-            
+      {/* Logica Portal Admin Dashboard */}
+      <div className="col-span-6 sm:col-span-12">
+        <Project
+          title="Logica Portal Admin Dashboard"
+          img={logica}
+          summary="Designed and developed an advanced admin dashboard that enables B2B transaction management with multi-layered categories, dynamic pricing, and real-time inventory tracking. Implemented role-based access control (RBAC) for secure user management and optimized for mobile and desktop views."
+          link="https://logica-portal.vercel.app/"
+          type="Admin Dashboard"
+          tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Role-based Access Control (RBAC), Real-time Inventory"
+        />
+      </div>
 
-              title="Docotor Management"
-                img={cs}
-                summary="Docotor Management is a scalable case management platform offering seamless doctor case handling, category management, case allocation, real-time updates, secure data sharing, and integrated chat and video call features.,"
-                link=""
-                type=""
-                tech="Technologies used: Next.js, MongoDB, Node.js, Express.js & Redux."
-              />
-            </div>
+      {/* Doctor Management Platform */}
+      <div className="col-span-12">
+        <FeaturedProject
+          title="Doctor Management Platform"
+          img={cs}
+          summary="Built a highly scalable and secure case management platform using Next.js and MongoDB. Enabled real-time case updates, secure data sharing, and integrated live chat and video calls, ensuring that doctors and patients can communicate efficiently."
+          link=""
+          type="Healthcare Platform"
+          tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Real-time Chat, Video Integration"
+        />
+      </div>
 
-            <div className=" col-span-6 sm:col-span-12">
-              <Project
-                title="E-commerce Website"
-                img={ECOM}
-                summary="Welcome to our grocery store website! We are your one-stop shop for all your grocery needs,
-                 offering a wide selection of fresh produce, jouice, dairy products, pantry staples, and more. With
-                  convenient online ordering and delivery options, "
-                tech="Technologies used: Next.js, bootstrap  and Redux."
-                link="https://ecommerce-react-sandy.vercel.app/"
-                type="DURING D2RTECH"
-              />
-            </div>
+      {/* Full-stack E-commerce Website */}
+      <div className="col-span-6 sm:col-span-12">
+        <Project
+          title="E-commerce Website"
+          img={ECOM}
+          summary="Developed a full-stack grocery store website using Next.js, Redux, and Bootstrap. Implemented cart management, dynamic product catalog, and user authentication with JWT. Optimized for speed, ensuring fast loading times and smooth user experience across all devices."
+          tech="Technologies used: Next.js, Bootstrap, Redux, JWT Authentication, Performance Optimization"
+          link="https://ecommerce-react-sandy.vercel.app/"
+          type="Ecommerce Platform"
+        />
+      </div>
 
-            <div className=" col-span-6 sm:col-span-12">
-              <Project
-                title="Tapir Software Recharge"
-                img={tapir}
-                summary="Ultimate Recharge Software: A comprehensive payment platform designed to streamline and simplify the process of recharging and bill payments, ensuring quick and seamless transactions for users."
-                tech="Technologies used: Next.js, Node.js, tailwind  and SQL."
-                link="http://tapir.co.in/"
-                type="DURING D2RTECH"
-              />
-            </div>
+      {/* Tapir Software Recharge */}
+      <div className="col-span-6 sm:col-span-12">
+        <Project
+          title="Tapir Software Recharge"
+          img={tapir}
+          summary="Built a comprehensive recharge and payment platform with real-time transaction processing and integration with multiple payment gateways. Focused on minimizing transaction time by optimizing the back-end with Node.js, ensuring scalability for future growth."
+          tech="Technologies used: Next.js, Node.js, SQL, TailwindCSS, Payment Gateway Integration, Real-time Transactions"
+          link="http://tapir.co.in/"
+          type="Recharge Platform"
+        />
+      </div>
 
-            <div className=" col-span-6 sm:col-span-12">
-              <Project
-                title="Sono website"
-                img={Sono}
-                summary="Powered by Next.js and Firebase, 
-                our dynamic platform seamlessly integrates real-time chat, archive sharing, and a secure archive system.
-                 With Firebase ensuring authentication and a dynamic database,"
-                link="https://sono-website.vercel.app/"
-                type="DURING D2RTECH"
-              />
-            </div>
+      {/* ShoppersBill MERN Stack */}
+      <div className="col-span-12">
+        <FeaturedProject
+          title="ShoppersBill MERN Stack"
+          img={Shop}
+          summary="Created a dynamic bill management system using the MERN stack (MongoDB, Express.js, React.js, Node.js). The platform includes real-time transaction history, seamless bill uploads, and user-specific dashboards. Optimized the application for scalability and high availability."
+          link="https://shoppers-bill-user.vercel.app"
+          type="Bill Management System"
+          tech="Technologies used: Next.js, Node.js, MongoDB, Redux, Real-time Data Handling, Scalable Architecture"
+        />
+      </div>
 
-            <div className=" col-span-6  sm:col-span-12">
-              <Project
-                title="Beamazing Online"
-                img={BA}
-                summary="BAO offers custom mobile & web designing, and development services along with end-to-end digital marketing solutions to build awareness using technology in this website HTML CSS as well as Javascript"
-                link="https://testing-web-navy.vercel.app/"
-                type="DURING D2RTECH"
-              />
-            </div>
+      {/* Admin Panel */}
+      <div className="col-span-6 sm:col-span-12">
+        <Project
+          title="ShoppersBill Admin Panel"
+          img={Shop}
+          summary="Developed a comprehensive admin panel for managing bills, transactions, and user data, ensuring a seamless user experience and easy navigation. Integrated with a secure authentication system and role-based access control for various admin levels."
+          link="https://shoppers-admin.vercel.app/login"
+          type="Admin Panel"
+          tech="Technologies used: Next.js, Node.js, MongoDB, Redux, Role-based Access Control (RBAC), Secure Authentication"
+        />
+      </div>
 
-            <div className=" col-span-12">
-              <FeaturedProject
-                title="ShoppersBill Mern Stack"
-                img={Shop}
-                summary="Welcome ShoppersBill With Next.js providing frontend and a powerful Node.js API managing the backend,
-                also use mongodb for handling data 
-                our platform ensures a dynamic and convenient user experience. Easily add bills, bill transactions histroy,"
-                link="https://shoppers-bill-user.vercel.app"
-                type="DURING D2RTCH"
-              />
-            </div>
+      {/* MUN Project */}
+      <div className="col-span-6 sm:col-span-12">
+        <Project
+          title="MUN Project"
+          img={PDPL}
+          summary="Developed a modern web application for Model United Nations (MUN) events, utilizing the MERN stack for efficient data management, event scheduling, and participant communication. Integrated real-time notifications and live updates."
+          link="https://mun-five.vercel.app/"
+          type="Event Management"
+          tech="Technologies used: MongoDB, Express.js, React.js, Node.js, Real-time Notifications"
+        />
+      </div>
 
-            <div className=" col-span-6  sm:col-span-12">
-              <Project
-                title="ShoppersBill Admin"
-                img={Shop}
-                summary="ShoppersBill admin panel: Next.js frontend, Node.js API backend with MongoDB, facilitating bill management and transaction history for a seamless user experience."
-                link="https://shoppers-admin.vercel.app/login"
-                type="DURING D2RTCH"
-              />
-            </div>
+      <div className=" col-span-6 sm:col-span-12">
+  <Project
+    title="World Map Project"
+    img={world}
+    summary="Utilize React with mapping libraries such as React-Leaflet or React-Simple-Maps to showcase a world map, integrating markers to highlight desired locations."
+    link="https://worldmap-snowy.vercel.app/"
+    type="Geospatial Visualization"
+  />
+</div>
 
-            <div className=" col-span-6  sm:col-span-12">
-              <Project
-                title="Arohan"
-                img={Arohan}
-                summary="Explore the possibilities with our static website crafted using HTML, CSS, and JavaScript. We bring simplicity and elegance to the digital world."
-                link="https://arohansolutions.com/"
-                type="DURING D2RTCH"
-              />
-            </div>
+    </div>
+  </Layout>
+</main>
 
-            <div className=" col-span-6  sm:col-span-12">
-              <Project
-                title="MUN Project"
-                img={PDPL}
-                summary="MERN (MongoDB, Express.js, React.js, Node.js) website, a culmination of cutting-edge technologies to deliver a seamless event experience"
-                link="https://mun-five.vercel.app/"
-                type="DURING D2RTCH"
-              />
-            </div>
 
-            <div className=" col-span-6  sm:col-span-12">
-              <Project
-                title="World Map Project"
-                img={world}
-                summary="Utilize React with mapping libraries such as React-Leaflet or React-Simple-Maps to showcase a world map, integrating markers to highlight desired locations"
-                link="https://worldmap-snowy.vercel.app/"
-                type="DURING D2RTCH"
-              />
-            </div>
-          </div>
-        </Layout>
-      </main>
     </>
   );
 };
