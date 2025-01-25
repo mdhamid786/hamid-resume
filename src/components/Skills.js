@@ -33,12 +33,12 @@ const Skills = () => {
       sm:bg-circularLightSm sm:dark:bg-circularDarkSm
      '>
       <motion.div className=' flex items-center justify-center rounded-full font-semibold bg-dark text-light
-      p-5 bg-red-500 shadow-dark cursor-pointer dark:circularDark  dark:text-dark dark:bg-light
+      p-5  shadow-dark cursor-pointer dark:circularDark  dark:text-dark dark:bg-light
        lg:p-6 md:p-4 xs:text-xs xs:p-2
       '
       whileHover={{scale:1.05}}
       >
-      MERN Stack
+     Full Stack Engineer
       </motion.div>
       <Skill name="HTML" x="-25vw" y="2vw"/>
       <Skill name="CSS" x="-5vw" y="-10vw"/>

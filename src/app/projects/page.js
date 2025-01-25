@@ -11,7 +11,7 @@ import logica from "../../../public/images/coming.jpg";
 import PDPL from "../../../public/images/projects/mu.png";
 import world from "../../../public/images/projects/world.png";
 import Shop from "../../../public/images/projects/shoppersbills.png";
-// import D2R from "../../../public/images/projects/dertech.png";
+import arohan from "../../../public/images/arohan.png";
 import ECOM from "../../../public/images/projects/banner.jpg";
 import tapir from "../../../public/images/projects/tapir.png";
 import yd from "../../../public/images/yd.jpg";
@@ -24,56 +24,52 @@ const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
   return (
     <>
       <article
-        className=" w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
-       lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4
-      "
+        className="w-full flex items-center justify-between relative rounded-br-2xl rounded-3xl border border-dark bg-light shadow-2xl p-12 dark:bg-dark dark:border-light
+       lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
       >
         <div
-          className=" absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-gray-500 rounded-br-3xl  dark:bg-light
-         xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]
-        "
+          className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-gray-500 rounded-br-3xl dark:bg-light
+         xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]"
         />
         <Link
           href={link}
           target="_blank"
-          className=" w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
+          className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full"
         >
           <FramerImage
             src={img}
             alt="img"
-            className=" w-full h-auto"
+            className="w-full h-full object-cover max-h-72 rounded-lg"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
           />
         </Link>
 
-        <div className=" w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6 ">
-          <span className=" text-primary font-medium text-xl dark:text-purple-500 xs:text-base">
+        <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+          <span className="text-primary font-medium text-xl dark:text-purple-500 xs:text-base">
             {type}
           </span>
           <Link
             href={link}
             target="_blank"
-            className=" hover:underline underline-offset-2"
+            className="hover:underline underline-offset-2"
           >
-            <h2 className=" my-2 w-full dark:text-light text-left text-4xl font-bold sm:text-sm ">
+            <h2 className="my-2 w-full dark:text-light text-left text-4xl font-bold sm:text-sm">
               {title}
             </h2>
           </Link>
-          <p className=" my-2 font-medium text-justify text-dark dark:text-light sm:text-sm">
-            {" "}
+          <p className="my-2 text-justify text-dark dark:text-light sm:text-sm">
             {summary}
           </p>
-          <p className=" my-2 font-medium text-justify text-dark dark:text-light sm:text-sm">
-            {" "}
+          <p className="my-2 text-justify text-dark dark:text-light sm:text-sm">
             {tech}
           </p>
 
-          <div className=" mt-2 flex items-center">
+          <div className="mt-2 flex items-center">
             <Link
               href={link}
               target="_blank"
-              className=" ml-4 rounded-lg bg-dark text-light   p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base "
+              className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
             >
               Visit Projects
             </Link>
@@ -87,64 +83,60 @@ const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
 const Project = ({ title, type, img, link, summary, tech }) => {
   return (
     <article
-      className=" w-full flex flex-col items-center justify-center rounded-2xl
-     border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4
-     "
+    style={{ height: "470px" }}
+      className="w-full flex flex-col items-center justify-center rounded-2xl
+     border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4"
     >
       <div
-        className=" absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-gray-500 rounded-br-3xl dark:bg-light
-          md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]
-         "
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-gray-500 rounded-br-3xl dark:bg-light
+          md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]"
       />
 
       <Link
         href={link}
         target="_blank"
-        className=" w-full cursor-pointer overflow-hidden rounded-lg"
+        className="w-full cursor-pointer overflow-hidden rounded-lg"
       >
         <FramerImage
           src={img}
           alt="img"
-          className=" w-full h-auto"
+          className="w-full h-full object-cover max-h-72 rounded-lg"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
           sizes="(max-width:768px) 100vw,
           (max-width:1200px) 50vw, 
-          50vw
-          "
+          50vw"
         />
       </Link>
 
-      <div className=" w-full flex flex-col items-start justify-between mt-4">
-        <span className=" text-primary font-medium text-xl dark:text-purple-500 lg:text-lg md:text-base">
+      <div className="w-full flex flex-col items-start justify-between mt-4">
+        <span className="text-primary font-medium text-xl dark:text-purple-500 lg:text-lg md:text-base">
           {type}
         </span>
         <Link
           href={link}
           target="_blank"
-          className=" hover:underline underline-offset-2"
+          className="hover:underline underline-offset-2"
         >
-          <h2 className=" my-2 w-full text-left text-3xl font-bold lg:text-2xl">
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">
             {title}
           </h2>
         </Link>
 
-        <p className=" my-2 font-medium text-justify text-dark dark:text-light sm:text-sm">
-          {" "}
+        <p className="my-2 text-justify text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
 
-        <p className=" my-2 font-medium text-justify text-dark dark:text-light sm:text-sm">
-          {" "}
+        <p className="my-2 text-justify text-dark dark:text-light sm:text-sm">
           {tech}
         </p>
 
-        <div className=" w-full mt-2 flex items-center justify-between">
+        <div className="w-full mt-2 flex items-center justify-between">
           <Link
             href={link}
             target="_blank"
-            className=" ml-4 rounded-lg bg-dark text-light   p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base "
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
           >
             Visit Projects
           </Link>
@@ -205,8 +197,8 @@ const page = () => {
         <FeaturedProject
           title="Doctor Management Platform"
           img={cs}
-          summary="Built a highly scalable and secure case management platform using Next.js and MongoDB. Enabled real-time case updates, secure data sharing, and integrated live chat and video calls, ensuring that doctors and patients can communicate efficiently."
-          link=""
+          summary="Built a highly scalable and secure case management eXclaim platform using Next.js and MongoDB. Enabled real-time case updates, secure data sharing, and integrated live chat and video calls, ensuring that doctors and patients can communicate efficiently."
+          link="https://exigirtech-invc-dna.up.railway.app/"
           type="Healthcare Platform"
           tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Real-time Chat, Video Integration"
         />
@@ -281,6 +273,29 @@ const page = () => {
     type="Geospatial Visualization"
   />
 </div>
+
+<div className=" col-span-6 sm:col-span-12">
+  <Project
+    title="Arohan Solutions Project"
+    img={Arohan}
+    summary="The Arohan Solution Website is a professional and responsive web platform designed to showcase the services and mission of Arohan Solution, a leading technology solutions provider."
+    link="https://arohansolutions.com/"
+    type="Static Website"
+  />
+</div>
+
+
+ {/* Sonography Management Software */}
+  <div className="col-span-12">
+    <FeaturedProject
+      title="Sonography Management Software"
+      img={Sono}
+      summary="Engineered a specialized platform for managing sonography reports and patient data. Ensured seamless integration of patient history and report generation using a secure, scalable architecture."
+      link=""
+      type="Healthcare Software"
+      tech="Technologies used: MongoDB, Express.js, React.js, Node.js, Secure Data Handling, Report Automation"
+    />
+  </div>
 
     </div>
   </Layout>

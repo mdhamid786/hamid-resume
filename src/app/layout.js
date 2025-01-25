@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
     </Head>
     <html lang="en">
      
-      <body style={{paddingLeft:"40px", paddingRight:"40px"}} className={`${inter.className} bg-light dark:bg-dark w-full min-h-screen `} >
+      <body style={{paddingLeft:"20px", paddingRight:"20px"}} className={`${inter.className} bg-light dark:bg-dark w-full min-h-screen `} >
         <Script id="theme-switcher" strategy='beforeInteractive'>
           {
             `
