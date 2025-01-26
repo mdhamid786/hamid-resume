@@ -83,7 +83,7 @@ const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
 const Project = ({ title, type, img, link, summary, tech }) => {
   return (
     <article
-    style={{ height: "470px" }}
+    style={{ height: "540" , maxHeight:"540px"}}
       className="w-full flex flex-col items-center justify-center rounded-2xl
      border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4"
     >
@@ -291,7 +291,7 @@ const page = () => {
       title="Sonography Management Software"
       img={Sono}
       summary="Engineered a specialized platform for managing sonography reports and patient data. Ensured seamless integration of patient history and report generation using a secure, scalable architecture."
-      link=""
+      link=" https://sono-website.vercel.app/ "
       type="Healthcare Software"
       tech="Technologies used: MongoDB, Express.js, React.js, Node.js, Secure Data Handling, Report Automation"
     />

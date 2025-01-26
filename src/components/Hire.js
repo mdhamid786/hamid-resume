@@ -12,7 +12,7 @@ const Hire = () => {
       "
       >
         <div className="w-48 h-auto flex items-center justify-center relative md:w-24 ">
-          <CircularText className={" fill-dark dark:fill-light animate-spin-slow"} />
+          {/* <CircularText className={" fill-dark dark:fill-light animate-spin-slow"} /> */}
 
           <Link
             href="mailto:ali.hamid161999@gmail.com"

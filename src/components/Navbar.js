@@ -10,7 +10,8 @@ import {
   LinkedInIcon,
   MoonIcon,
   SunIcon,
-  Vercel
+  Vercel,
+  Youtube
   
 } from "./icons";
 import useThemesSwicher from "./hooks/useThemesSwicher";
@@ -123,13 +124,13 @@ const Navbar = () => {
           </motion.a>
 
           <motion.a
-            href="https://vercel.com/md-hamid-alis-projects"
+            href="https://www.youtube.com/@HamidExplore"
             target="_blank"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className=" w-6 mx-3 mr-12"
           >
-            <Vercel />
+            <Youtube />
           </motion.a>
 
 
