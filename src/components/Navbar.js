@@ -211,8 +211,8 @@ const Navbar = () => {
           >
            <svg
   xmlns="http://www.w3.org/2000/svg"
-  width={512}
-  height={116}
+ width="4em"
+    height="3em"
   viewBox="0 0 512 116"
 >
   <path
