@@ -183,7 +183,7 @@ const Navbar = () => {
          </motion.a>
 
          <motion.a
-           href="/"
+           href="https://github.com/mdhamid786"
            target="_blank"
            whileHover={{ y: -2 }}
            whileTap={{ scale: 0.9 }}
@@ -193,7 +193,7 @@ const Navbar = () => {
          </motion.a>
 
          <motion.a
-           href="www.linkedin.com/in/mdhamidali1"
+           href="https://www.linkedin.com/in/mdhamidali1"
            target="_blank"
            whileHover={{ y: -2 }}
            whileTap={{ scale: 0.9 }}
@@ -203,15 +203,14 @@ const Navbar = () => {
          </motion.a>
 
          <motion.a
-           href="/"
-           target="_blank"
-           whileHover={{ y: -2 }}
-           whileTap={{ scale: 0.9 }}
-           className=" w-6 ml-3 sm:mx-1"
-         >
-           <DribbbleIcon />
-         </motion.a>
-         
+            href="https://www.youtube.com/@HamidExplore"
+            target="_blank"
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className=" w-6 mx-3 mr-12"
+          >
+            <Youtube />
+          </motion.a>
 
          <button
            className={`ml-3 flex items-start justify-center rounded-full p-1 ${
