@@ -1,7 +1,7 @@
 "use client";
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
-import profilePic from "../../../public/images/profile/bgimg.jpeg";
+import profilePic from "../../../public/images/profile/profileImage.jpg";
 import Head from "next/head";
 import React, { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
