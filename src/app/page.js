@@ -58,7 +58,7 @@ export default function Home() {
                     hover:border-dark dark:text-dark dark:bg-light hover:dark:bg-dark hover:dark:text-light hover:dark:border-light
                      md:p-2 md-px-4 md:text-base"
                   download={true}
-                  href="Hamid_MERN_2yr_Expr.pdf"
+                  href="Hamid_FullStack_2.6yrsExp.pdf"
                   target="_blank"
                   passHref
                 >
