@@ -162,7 +162,7 @@ const page = () => {
           title="Logica Portal B2C Platform"
           img={logica}
           summary="Developed a high-performance B2C platform using Next.js and Node.js, optimized for speed and scalability. Integrated secure payment gateways and implemented a dynamic product recommendation system leveraging MongoDB for personalized shopping experiences."
-          link="https://emaavi.vercel.app/"
+          link="https://www.emaavy.com/"
           type="B2C Platform"
           tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Secure Payment Integration"
         />
@@ -186,7 +186,7 @@ const page = () => {
           title="Logica Portal Admin Dashboard"
           img={logica}
           summary="Designed and developed an advanced admin dashboard that enables B2B transaction management with multi-layered categories, dynamic pricing, and real-time inventory tracking. Implemented role-based access control (RBAC) for secure user management and optimized for mobile and desktop views."
-          link="https://logica-portal.vercel.app/"
+          link="https://www.admin.emaavy.com/"
           type="Admin Dashboard"
           tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Role-based Access Control (RBAC), Real-time Inventory"
         />
