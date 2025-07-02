@@ -43,42 +43,32 @@ const about = () => {
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-            <div className="col-span-3 flex flex-col items-start justify-center xl:col-span-4 md:order-2 md:col-span-8">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
-                About Me
-              </h2>
-              <h2 className="font-bold text-2xl">Md. Hamid Ali</h2>
-              <p
-                style={{ fontStyle: "italic", fontWeight: "bold" }}
-                className="text-lg mb-4"
-              >
-                Full Stack Developer | MERN Stack Expert | Tech Innovator
-              </p>
-              <p className="font-medium text-justify">
-                I’m a passionate and results-driven Full Stack Developer with{" "}
-                <strong>2.6+ years</strong> of industry experience, specializing
-                in crafting seamless digital solutions using the{" "}
-                <strong>MERN stack</strong>. With a B.Tech in Computer Science
-                Engineering, I bring a strong blend of technical expertise and
-                creativity to every project I undertake.
-              </p>
+        <div className="col-span-3 flex flex-col items-start justify-center xl:col-span-4 md:order-2 md:col-span-8">
+  <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
+    About Me
+  </h2>
+  <h2 className="font-bold text-2xl text-dark dark:text-light">Md. Hamid Ali</h2>
+  <p className="italic font-medium text-primary mb-4">
+    Full Stack Engineer · MERN Stack · DevOps Aware · Team Leader
+  </p>
 
-              <p className="font-medium my-4 text-justify">
-                From building visually stunning and responsive user interfaces
-                with <strong>React.js</strong> and <strong>Next.js</strong>, to
-                designing robust server-side solutions with{" "}
-                <strong>Node.js</strong> and <strong>Express.js</strong>, I
-                thrive on delivering exceptional user experiences. My expertise
-                in <strong>MongoDB</strong> and <strong>SQL</strong> ensures
-                efficient and scalable database management.
-              </p>
-              <p className="font-medium text-justify">
-                Driven by innovation and a constant urge to stay ahead of
-                technology trends, I’m always excited to take on new challenges
-                and turn ideas into impactful solutions. Let’s collaborate and
-                create something extraordinary together!
-              </p>
-            </div>
+  <p className="font-medium text-justify text-gray-700 dark:text-gray-300 mb-4">
+    I am a performance-driven full stack engineer with <span className="font-semibold">3+ years</span> of experience in building robust, scalable applications. My expertise spans both frontend and backend development using the <span className="font-semibold">MERN stack</span>.
+  </p>
+
+  <p className="font-medium text-justify text-gray-700 dark:text-gray-300 mb-4">
+    I design clean, responsive UIs with <span className="text-dark dark:text-light font-medium">React.js</span> and <span className="text-dark dark:text-light font-medium">Next.js</span>, and develop efficient server-side APIs using <span className="text-dark dark:text-light font-medium">Node.js</span> and <span className="text-dark dark:text-light font-medium">Express.js</span>. I also have hands-on experience with both <span className="text-dark dark:text-light font-medium">MongoDB</span> and <span className="text-dark dark:text-light font-medium">SQL</span> for flexible data modeling.
+  </p>
+
+  <p className="font-medium text-justify text-gray-700 dark:text-gray-300 mb-4">
+    In addition to coding, I manage <span className="font-medium">CI/CD pipelines</span>, deploy on cloud platforms like <span className="font-medium">AWS</span>, <span className="font-medium">Vercel</span>, and <span className="font-medium">DigitalOcean</span>, and handle <span className="font-medium">Nginx configurations</span> for production-ready systems.
+  </p>
+
+  <p className="font-medium text-justify text-gray-700 dark:text-gray-300">
+    I also lead and mentor junior developers, ensuring smooth team collaboration and continuous learning. I love solving real-world problems and turning innovative ideas into impactful, user-friendly applications.
+  </p>
+</div>
+
 
             <div
               className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark

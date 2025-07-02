@@ -10,6 +10,10 @@ import Project4 from "../../../public/images/profile/certificate.png";
 import app from "../../../public/images/profile/appdev.jpg";
 import months from "../../../public/images/profile/6months.jpg";
 import apptitude from "../../../public/images/profile/apptitude.jpg";
+import Healthcare from "../../../public/images/projects/Healthcare2.jpg";
+import CollegeSystem from "../../../public/images/projects/school.png";
+import LMS from "../../../public/images/projects/online.jpg";
+import ProjectB2B from "../../../public/images/projects/bill.jpg";
 
 
 import React, { useRef } from "react";
@@ -171,41 +175,43 @@ const page = () => {
           
           </ul>
 
-          <h2 className=" font-bold text-4xl w-full text-center my-6 mt-5 ">All </h2>
 
-          <ul>
-            <Articles 
-            title=" Write each line of code multiple times."
-            date="24-12-2024"
-            link="/"
-            img={Project1}
-           
-            />
-             <Articles 
-            title=" Practice code in different environments"
-            date="24-12-2024"
-            link="/"
-            img={Project1}
-           
-            />
+           {/* NEW SECTION: Software Impact */}
+    <h2 className="font-bold text-4xl w-full text-center my-12 mt-20">
+      How Our Work Makes a Difference
+    </h2>
+    <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
+      <FeatureArticle
+        title="Empowering Local Shops with Digital Presence"
+        summary="Built a B2B eCommerce platform to help small retailers list and sell their products online, increasing their visibility and sales."
+        time="6 min read"
+        link="/projects/b2b-platform"
+        img={ProjectB2B}
+      />
+      <FeatureArticle
+        title="Enabling Students with Online Learning Tools"
+        summary="Developed a learning management system that offers students access to study material and quizzes, especially during the pandemic."
+        time="5 min read"
+        link="/projects/lms"
+        img={LMS}
+      />
+      <FeatureArticle
+        title="Helping Patients Book Appointments Easily"
+        summary="Created a medical appointment booking system to reduce hospital waiting time and improve healthcare access in rural areas."
+        time="7 min read"
+        link="/projects/healthcare"
+        img={Healthcare}
+      />
+      <FeatureArticle
+        title="Streamlining College Management"
+        summary="Built a digital system for attendance, mark entry, and result generation to help colleges manage their data better and reduce paperwork."
+        time="6 min read"
+        link="/projects/college-system"
+        img={CollegeSystem}
+      />
+    </ul>
 
-<Articles 
-            title="Contribute to the open-source community."
-            date="24-12-2024"
-            link="/"
-            img={Project1}
-           
-            />
-
-
-<Articles 
-            title="Rewrite your code when you learn something new. ..."
-            date="24-12-2024"
-            link="/"
-            img={Project1}
-           
-            />
-          </ul>
+       
         </Layout>
       </main>
     </>
