@@ -15,7 +15,7 @@ const Page = () => {
   }, []);
 
   const getTimeLeft = () => {
-    const targetDate = new Date("2025-02-25T00:00:00"); // Target date
+    const targetDate = new Date("2025-07-25T00:00:00"); // Target date
     const now = new Date();
     const timeDiff = targetDate - now;
 

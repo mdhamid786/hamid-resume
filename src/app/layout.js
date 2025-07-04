@@ -10,7 +10,7 @@ const inter = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Hamid Portfolio',
-  description: 'Mern stack developer',
+  description: 'Full Stack Software Engineer',
 }
 
 export default function RootLayout({ children }) {
