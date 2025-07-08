@@ -1,6 +1,7 @@
 "use client";
 
 import AnimatedText from "@/components/AnimatedText";
+import Link from "next/link";
 import React from "react";
 
 const Page = () => {
@@ -681,6 +682,16 @@ const Page = () => {
               </li>
             </ul>
           </section>
+
+           <Link
+            className=" text-white mt-5 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            download={true}
+            href="School.docx"
+            target="_blank"
+            passHref
+          >
+            School Management Pdf Download
+          </Link>
         </div>
       </div>
     </div>

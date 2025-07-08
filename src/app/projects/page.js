@@ -56,7 +56,7 @@ const FeaturedProject = ({
           />
         </Link>
 
-        <div className="w-1/2 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <div className="w-1/2 overflow-hidden flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
           <span className="text-primary font-medium text-xl dark:text-purple-500 xs:text-base">
             {type}
           </span>
@@ -84,7 +84,8 @@ const FeaturedProject = ({
                 target="_blank"
                 className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
               >
-                Visit Projects
+                <span className="inline md:hidden">Project Demo</span>
+                <span className=" hidden md:inline">Demo</span>
               </Link>
             </div>
 
@@ -95,7 +96,8 @@ const FeaturedProject = ({
                 target="_blank"
                 className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
               >
-                Project Details
+                <span className="inline md:hidden">Project Details</span>
+                <span className=" hidden md:inline">Details</span>
               </Link>
             </div>
           </div>
@@ -165,7 +167,8 @@ const Project = ({ title, type, img, link, summary, tech, detailLink }) => {
               target="_blank"
               className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
             >
-              Visit Projects
+              <span className="inline md:hidden">Project Demo</span>
+              <span className=" hidden md:inline">Demo</span>
             </Link>
           </div>
 
@@ -174,9 +177,10 @@ const Project = ({ title, type, img, link, summary, tech, detailLink }) => {
             <Link
               href={detailLink}
               target="_blank"
-              className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+              className="rounded-lg bg-dark text-light p-1.5 px-4 text-sm font-semibold leading-none md:p-2 md:px-6 md:text-lg md:leading-normal dark:bg-light dark:text-dark text-center"
             >
-              Project Details
+              <span className="inline md:hidden">Project Details</span>
+              <span className=" hidden md:inline">Details</span>
             </Link>
           </div>
         </div>

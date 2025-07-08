@@ -1,6 +1,7 @@
 "use client";
 
 import AnimatedText from "@/components/AnimatedText";
+import Link from "next/link";
 import React from "react";
 
 const Page = () => {
@@ -157,7 +158,7 @@ const Page = () => {
             <h2 className="text-2xl font-bold mb-4 border-l-4 border-blue-600 pl-3">
               Future Enhancements
             </h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
+            <ul className="list-disc list-inside text-gray-700 space-y-2 mb-12">
               <li>AI-based product recommendations & personalization</li>
               <li>PWA support for offline usage and home screen apps</li>
               <li>Affiliate marketing module and multi-level referrals</li>
@@ -165,6 +166,16 @@ const Page = () => {
               <li>Voice search & AI chatbot for customer support</li>
             </ul>
           </section>
+
+          <Link
+            className=" text-white mt-5 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            download={true}
+            href="Logica.doc"
+            target="_blank"
+            passHref
+          >
+            Emaavy Pdf Download
+          </Link>
         </div>
       </div>
     </div>

@@ -1,6 +1,8 @@
 "use client";
 
 import AnimatedText from "@/components/AnimatedText";
+import { LinkArrow } from "@/components/icons";
+import Link from "next/link";
 import React from "react";
 
 const Page = () => {
@@ -80,13 +82,28 @@ const Page = () => {
             </h2>
             <ul className="list-disc list-inside space-y-3 text-gray-700 leading-relaxed">
               <li>OTP-based secure user registration (SMS or Email).</li>
-              <li>Book listings include title, author, genre, condition, price (optional), and images.</li>
-              <li>Admin approval required for each listing before it is published.</li>
+              <li>
+                Book listings include title, author, genre, condition, price
+                (optional), and images.
+              </li>
+              <li>
+                Admin approval required for each listing before it is published.
+              </li>
               <li>Book details validation using ISBNdb API integration.</li>
-              <li>Search and filter books by category, condition, or keyword.</li>
-              <li>Buyers can contact sellers through a structured inquiry form.</li>
-              <li>Email notifications for registration, inquiries, listing status, etc.</li>
-              <li>Listings expire after 6 months or 7 days of inactivity post-inquiry.</li>
+              <li>
+                Search and filter books by category, condition, or keyword.
+              </li>
+              <li>
+                Buyers can contact sellers through a structured inquiry form.
+              </li>
+              <li>
+                Email notifications for registration, inquiries, listing status,
+                etc.
+              </li>
+              <li>
+                Listings expire after 6 months or 7 days of inactivity
+                post-inquiry.
+              </li>
               <li>No online payments — all deals are made offline.</li>
             </ul>
           </section>
@@ -97,12 +114,18 @@ const Page = () => {
               Admin Dashboard
             </h2>
             <ul className="list-disc list-inside text-gray-700 space-y-3 leading-relaxed">
-              <li>Dashboard overview showing counts of books, users, and inquiries.</li>
+              <li>
+                Dashboard overview showing counts of books, users, and
+                inquiries.
+              </li>
               <li>View, approve, reject, or delete book listings.</li>
               <li>Create and manage book categories and genres.</li>
               <li>Track and filter inquiries made by buyers to sellers.</li>
               <li>Block, delete, or manage user roles and permissions.</li>
-              <li>Update blog content, contact information, and static pages from CMS.</li>
+              <li>
+                Update blog content, contact information, and static pages from
+                CMS.
+              </li>
             </ul>
           </section>
 
@@ -126,7 +149,7 @@ const Page = () => {
             <h2 className="text-2xl font-bold mb-4 border-l-4 border-blue-600 pl-3">
               Future Enhancements
             </h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-2">
+            <ul className="list-disc list-inside text-gray-700 space-y-2 mb-12">
               <li>Mobile app with React Native for Android/iOS</li>
               <li>Advanced analytics dashboard for admin</li>
               <li>Seller reward and referral program</li>
@@ -134,6 +157,15 @@ const Page = () => {
               <li>SEO tools and integrated blog CMS</li>
             </ul>
           </section>
+          <Link
+            className=" text-white mt-5 bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            download={true}
+            href="2usebook.pdf"
+            target="_blank"
+            passHref
+          >
+            2UseBooks Pdf Download
+          </Link>
         </div>
       </div>
     </div>
