@@ -13,7 +13,7 @@ import apptitude from "../../../public/images/profile/apptitude.jpg";
 import Healthcare from "../../../public/images/projects/Healthcare2.jpg";
 import CollegeSystem from "../../../public/images/projects/school.png";
 import LMS from "../../../public/images/projects/online.jpg";
-import ProjectB2B from "../../../public/images/projects/bill.jpg";
+// import ProjectB2B from "../../../public/images/projects/bill.jpg";
 
 
 import React, { useRef } from "react";
@@ -186,7 +186,7 @@ const page = () => {
         summary="Built a B2B eCommerce platform to help small retailers list and sell their products online, increasing their visibility and sales."
         time="6 min read"
         link="/projects/b2b-platform"
-        img={ProjectB2B}
+         src="/images/projects/bill.jpg"
       />
       <FeatureArticle
         title="Enabling Students with Online Learning Tools"

@@ -81,7 +81,7 @@ const Page = () => {
               <li>KYC uploads via camera/gallery.</li>
               <li>Rate us, push notifications, in-app support center.</li>
               <li>Refund/cancellation request, order history filter, invoice as PDF.</li>
-              <li>View last 7 days' activity, earnings, cashback, cart discounts.</li>
+              <li>View last 7 days activity, earnings, cashback, cart discounts.</li>
             </ul>
           </section>
 

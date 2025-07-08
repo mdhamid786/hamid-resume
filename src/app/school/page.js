@@ -565,7 +565,7 @@ const Page = () => {
                   </li>
                   <li>
                     <strong>Parent Access (View-Only):</strong> Parents can view
-                    their child's report card directly in the app/web portal.
+                    their child report card directly in the app/web portal.
                     Download, editing, or sharing is restricted to preserve
                     integrity.
                   </li>
