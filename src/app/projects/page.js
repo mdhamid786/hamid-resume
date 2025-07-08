@@ -23,7 +23,15 @@ import { motion } from "framer-motion";
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
+const FeaturedProject = ({
+  type,
+  title,
+  summary,
+  img,
+  link,
+  tech,
+  detailLink,
+}) => {
   return (
     <>
       <article
@@ -68,14 +76,28 @@ const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
             {tech}
           </p>
 
-          <div className="mt-2 flex items-center">
-            <Link
-              href={link}
-              target="_blank"
-              className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
-            >
-              Visit Projects
-            </Link>
+          <div className="flex w-full mt-4">
+            {/* Left-aligned button */}
+            <div className="w-1/2 flex justify-start">
+              <Link
+                href={link}
+                target="_blank"
+                className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+              >
+                Visit Projects
+              </Link>
+            </div>
+
+            {/* Right-aligned button */}
+            <div className="w-1/2 flex justify-end">
+              <Link
+                href={detailLink}
+                target="_blank"
+                className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+              >
+                Project Details
+              </Link>
+            </div>
           </div>
         </div>
       </article>
@@ -83,7 +105,7 @@ const FeaturedProject = ({ type, title, summary, img, link, tech }) => {
   );
 };
 
-const Project = ({ title, type, img, link, summary, tech }) => {
+const Project = ({ title, type, img, link, summary, tech, detailLink }) => {
   return (
     <article
       style={{ height: "540", maxHeight: "540px" }}
@@ -135,14 +157,28 @@ const Project = ({ title, type, img, link, summary, tech }) => {
           {tech}
         </p>
 
-        <div className="w-full mt-2 flex items-center justify-between">
-          <Link
-            href={link}
-            target="_blank"
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
-          >
-            Visit Projects
-          </Link>
+        <div className="flex w-full mt-4">
+          {/* Left-aligned button */}
+          <div className="w-1/2 flex justify-start">
+            <Link
+              href={link}
+              target="_blank"
+              className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            >
+              Visit Projects
+            </Link>
+          </div>
+
+          {/* Right-aligned button */}
+          <div className="w-1/2 flex justify-end">
+            <Link
+              href={detailLink}
+              target="_blank"
+              className="rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            >
+              Project Details
+            </Link>
+          </div>
         </div>
       </div>
     </article>
@@ -167,6 +203,7 @@ const page = () => {
                 summary="Developed a comprehensive School Management System that streamlines administrative operations such as student admissions, real-time chat, fee tracking, attendance monitoring, and exam scheduling. Integrated AI-based student performance tracking to help educators identify learning patterns and provide personalized support. scalability and secure role-based access for teachers, staff, and administrators."
                 tech="Technologies used: Next.js, Node.js, MongoDB, TailwindCSS, Zoho Payment Integrate Server-side Rendering (SSR)"
                 link="https://app.studyified.com"
+                detailLink="./school"
                 type="School Management System"
               />
             </div>
@@ -180,6 +217,7 @@ const page = () => {
                 link="https://2-usebooks-k8w6.vercel.app/"
                 type="Second-Hand & New Book Marketplace (Admin Panel)"
                 tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux"
+                detailLink="./school"
               />
             </div>
 
@@ -191,6 +229,7 @@ const page = () => {
                 summary="Developed a high-performance B2C platform using Next.js and Node.js, optimized for speed and scalability. Integrated secure payment gateways and implemented a dynamic product recommendation system leveraging MongoDB for personalized shopping experiences."
                 link="https://www.emaavy.com/"
                 type="B2C Platform"
+                detailLink="./emaavy"
                 tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Secure Payment Integration"
               />
             </div>
@@ -203,6 +242,7 @@ const page = () => {
                 summary="Engineered a hybrid B2B/B2C ecommerce platform using Next.js, PostgreSQL, and Node.js. Developed a robust order management system that supports high concurrency, ensuring seamless transactions. Applied performance optimization techniques, including lazy loading and server-side rendering (SSR)."
                 tech="Technologies used: Next.js, Node.js, PostgreSQL, TailwindCSS, Server-side Rendering (SSR), Lazy Loading"
                 link="https://shop.yodigitals.com/"
+                detailLink="./yo-digital"
                 type="Ecommerce Platform"
               />
             </div>
@@ -215,6 +255,7 @@ const page = () => {
                 summary="Designed and developed an advanced admin dashboard that enables B2B transaction management with multi-layered categories, dynamic pricing, and real-time inventory tracking. Implemented role-based access control (RBAC) for secure user management and optimized for mobile and desktop views."
                 link="https://www.admin.emaavy.com/"
                 type="Admin Dashboard"
+                detailLink="./emaavy"
                 tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Role-based Access Control (RBAC), Real-time Inventory"
               />
             </div>
@@ -227,6 +268,7 @@ const page = () => {
                 summary="Built a highly scalable and secure case management eXclaim platform using Next.js and MongoDB. Enabled real-time case updates, secure data sharing, and integrated live chat and video calls, ensuring that doctors and patients can communicate efficiently."
                 link="https://exigirtech-invc-dna.up.railway.app/"
                 type="Healthcare Platform"
+                detailLink="./"
                 tech="Technologies used: Next.js, MongoDB, Node.js, Express.js, Redux, Real-time Chat, Video Integration"
               />
             </div>
@@ -240,6 +282,7 @@ const page = () => {
                 tech="Technologies used: Next.js, Bootstrap, Redux, JWT Authentication, Performance Optimization"
                 link="https://ecommerce-react-sandy.vercel.app/"
                 type="Ecommerce Platform"
+                detailLink="./"
               />
             </div>
 
@@ -252,6 +295,7 @@ const page = () => {
                 tech="Technologies used: Next.js, Node.js, SQL, TailwindCSS, Payment Gateway Integration, Real-time Transactions"
                 link="http://tapir.co.in/"
                 type="Recharge Platform"
+                detailLink="./"
               />
             </div>
 
@@ -263,6 +307,7 @@ const page = () => {
                 summary="Created a dynamic bill management system using the MERN stack (MongoDB, Express.js, React.js, Node.js). The platform includes real-time transaction history, seamless bill uploads, and user-specific dashboards. Optimized the application for scalability and high availability."
                 link="https://shoppers-bill-user.vercel.app"
                 type="Bill Management System"
+                detailLink="./"
                 tech="Technologies used: Next.js, Node.js, MongoDB, Redux, Real-time Data Handling, Scalable Architecture"
               />
             </div>
@@ -275,6 +320,7 @@ const page = () => {
                 summary="Developed a comprehensive admin panel for managing bills, transactions, and user data, ensuring a seamless user experience and easy navigation. Integrated with a secure authentication system and role-based access control for various admin levels."
                 link="https://shoppers-admin.vercel.app/login"
                 type="Admin Panel"
+                detailLink="./"
                 tech="Technologies used: Next.js, Node.js, MongoDB, Redux, Role-based Access Control (RBAC), Secure Authentication"
               />
             </div>
@@ -287,6 +333,7 @@ const page = () => {
                 summary="Developed a modern web application for Model United Nations (MUN) events, utilizing the MERN stack for efficient data management, event scheduling, and participant communication. Integrated real-time notifications and live updates."
                 link="https://mun-five.vercel.app/"
                 type="Event Management"
+                detailLink="./"
                 tech="Technologies used: MongoDB, Express.js, React.js, Node.js, Real-time Notifications"
               />
             </div>
@@ -298,6 +345,7 @@ const page = () => {
                 summary="Utilize React with mapping libraries such as React-Leaflet or React-Simple-Maps to showcase a world map, integrating markers to highlight desired locations."
                 link="https://worldmap-snowy.vercel.app/"
                 type="Geospatial Visualization"
+                detailLink="./"
               />
             </div>
 
@@ -308,6 +356,7 @@ const page = () => {
                 summary="The Arohan Solution Website is a professional and responsive web platform designed to showcase the services and mission of Arohan Solution, a leading technology solutions provider."
                 link="https://arohansolutions.com/"
                 type="Static Website"
+                detailLink="./"
               />
             </div>
 
@@ -319,6 +368,7 @@ const page = () => {
                 summary="Engineered a specialized platform for managing sonography reports and patient data. Ensured seamless integration of patient history and report generation using a secure, scalable architecture."
                 link=" https://sono-website.vercel.app/ "
                 type="Healthcare Software"
+                detailLink="./"
                 tech="Technologies used: MongoDB, Express.js, React.js, Node.js, Secure Data Handling, Report Automation"
               />
             </div>
