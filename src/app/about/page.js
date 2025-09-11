@@ -32,7 +32,7 @@ const AnimatedNumbers = ({ value }) => {
 
   return <span ref={ref}></span>;
 };
-
+// abut oage
 const about = () => {
   return (
     <>
