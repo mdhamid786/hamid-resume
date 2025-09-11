@@ -5,18 +5,14 @@ import { FaClock, FaShareAlt } from "react-icons/fa";
 
 import { usePathname, useSearchParams } from "next/navigation";
 const BlogDetail = () => {
-
-
-     const pathname = usePathname();
+  const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  // Construct the full URL safely (no window needed)
+  // Construct the full URL safely (no window needed
   const baseUrl = "https://hamid-resume.vercel.app"; // Replace with process.env.NEXT_PUBLIC_SITE_URL
   const fullUrl = `${baseUrl}${pathname}${
     searchParams.toString() ? `?${searchParams.toString()}` : ""
   }`;
-
-
 
   const blog = {
     title:
@@ -225,15 +221,15 @@ The future of healthcare is digital, connected, and intelligent. Organizations t
 
             {/* Share Button */}
             <div className="flex justify-start mt-10 mb-16">
-      <a
-        href={whatsappUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-2 bg-blue-600 hover:bg-red-700 text-white font-medium px-6 py-3 rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
-      >
-        <FaShareAlt className="text-lg" /> Share on WhatsApp
-      </a>
-    </div>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-blue-600 hover:bg-red-700 text-white font-medium px-6 py-3 rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
+              >
+                <FaShareAlt className="text-lg" /> Share on WhatsApp
+              </a>
+            </div>
           </article>
         </div>
       </div>
